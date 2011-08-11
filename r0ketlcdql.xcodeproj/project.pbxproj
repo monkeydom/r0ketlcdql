@@ -252,10 +252,12 @@
 		F22F91B913F33BAD006E4554 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "r0ketlcdql/r0ketlcdql-Prefix.pch";
 				INFOPLIST_FILE = "r0ketlcdql/r0ketlcdql-Info.plist";
 				INSTALL_PATH = /Library/QuickLook;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = qlgenerator;
 			};
@@ -264,10 +266,12 @@
 		F22F91BA13F33BAD006E4554 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "r0ketlcdql/r0ketlcdql-Prefix.pch";
 				INFOPLIST_FILE = "r0ketlcdql/r0ketlcdql-Info.plist";
 				INSTALL_PATH = /Library/QuickLook;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = qlgenerator;
 			};

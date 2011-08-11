@@ -1,0 +1,11 @@
+.DS_Store
+
+# Personal Xcode settings
+*.pbxuser
+*.mode2*
+*.mode1*
+*.mode3*
+
+*.orig
+*.xcworkspace
+xcuserdata
