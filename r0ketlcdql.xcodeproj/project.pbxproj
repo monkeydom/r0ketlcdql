@@ -23,12 +23,12 @@
 		F22F91A313F33BAD006E4554 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
 		F22F91A513F33BAD006E4554 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 		F22F91A713F33BAD006E4554 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
-		F22F91AB13F33BAD006E4554 /* r0ketlcdql-Info.plist */ = {isa = PBXFileReference; path = "r0ketlcdql-Info.plist"; sourceTree = "<group>"; };
+		F22F91AB13F33BAD006E4554 /* r0ketlcdql-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "r0ketlcdql-Info.plist"; sourceTree = "<group>"; };
 		F22F91AD13F33BAD006E4554 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F22F91AF13F33BAD006E4554 /* GenerateThumbnailForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GenerateThumbnailForURL.c; sourceTree = "<group>"; };
 		F22F91B113F33BAD006E4554 /* GeneratePreviewForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GeneratePreviewForURL.c; sourceTree = "<group>"; };
 		F22F91B313F33BAD006E4554 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		F22F91B513F33BAD006E4554 /* r0ketlcdql-Prefix.pch */ = {isa = PBXFileReference; path = "r0ketlcdql-Prefix.pch"; sourceTree = "<group>"; };
+		F22F91B513F33BAD006E4554 /* r0ketlcdql-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "r0ketlcdql-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
