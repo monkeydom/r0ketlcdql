@@ -1,6 +1,4 @@
-#include <CoreFoundation/CoreFoundation.h>
-#include <CoreServices/CoreServices.h>
-#include <QuickLook/QuickLook.h>
+#include "r0ketlcd.h"
 
 /* -----------------------------------------------------------------------------
    Generate a preview for file
@@ -8,10 +6,6 @@
    This function's job is to create preview for designated file
    ----------------------------------------------------------------------------- */
 
-#define ONE_LCD_FRAME_BYTESIZE 864
-#define LCD_FRAME_PIXEL_WIDTH 96
-#define LCD_FRAME_PIXEL_HEIGHT 68
-#define ONE_LCD_FRAME_
 
 OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview, CFURLRef url, CFStringRef contentTypeUTI, CFDictionaryRef options)
 {
@@ -22,7 +16,7 @@ OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview,
     if (CFURLCreateDataAndPropertiesFromResource(NULL, url, &fileData, &propertyDictionary, nil, &errorCode)) {
         
         CFIndex dataLength = CFDataGetLength(fileData);
-        UInt8 *bytes = CFDataGetBytePtr(fileData);
+        UInt8 *bytes = (UInt8 *)CFDataGetBytePtr(fileData);
         long pages = dataLength / ONE_LCD_FRAME_BYTESIZE;
         CGSize lcdSize = CGSizeMake(LCD_FRAME_PIXEL_WIDTH, LCD_FRAME_PIXEL_HEIGHT * pages);
         CGContextRef cgContext = QLPreviewRequestCreateContext(preview, lcdSize, true, NULL);
@@ -64,7 +58,9 @@ OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview,
     return noErr;
 }
 
+void CancelPreviewGeneration(void* thisInterface, QLPreviewRequestRef preview);
+
 void CancelPreviewGeneration(void* thisInterface, QLPreviewRequestRef preview)
 {
-    // implement only if supported
+//    // implement only if supported
 }

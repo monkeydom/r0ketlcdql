@@ -15,6 +15,7 @@
 		F22F91B013F33BAD006E4554 /* GenerateThumbnailForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = F22F91AF13F33BAD006E4554 /* GenerateThumbnailForURL.c */; };
 		F22F91B213F33BAD006E4554 /* GeneratePreviewForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = F22F91B113F33BAD006E4554 /* GeneratePreviewForURL.c */; };
 		F22F91B413F33BAD006E4554 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = F22F91B313F33BAD006E4554 /* main.c */; };
+		F2C5A76713F3675A0082CEDD /* r0ketlcd.h in Headers */ = {isa = PBXBuildFile; fileRef = F2C5A76613F3675A0082CEDD /* r0ketlcd.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		F22F91B113F33BAD006E4554 /* GeneratePreviewForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GeneratePreviewForURL.c; sourceTree = "<group>"; };
 		F22F91B313F33BAD006E4554 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		F22F91B513F33BAD006E4554 /* r0ketlcdql-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "r0ketlcdql-Prefix.pch"; sourceTree = "<group>"; };
+		F2C5A76613F3675A0082CEDD /* r0ketlcd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = r0ketlcd.h; sourceTree = "<group>"; };
+		F2C5A76913F36B900082CEDD /* Read Me.rtfd */ = {isa = PBXFileReference; lastKnownFileType = wrapper.rtfd; path = "Read Me.rtfd"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +80,8 @@
 		F22F91A913F33BAD006E4554 /* r0ketlcdql */ = {
 			isa = PBXGroup;
 			children = (
+				F2C5A76913F36B900082CEDD /* Read Me.rtfd */,
+				F2C5A76613F3675A0082CEDD /* r0ketlcd.h */,
 				F22F91AF13F33BAD006E4554 /* GenerateThumbnailForURL.c */,
 				F22F91B113F33BAD006E4554 /* GeneratePreviewForURL.c */,
 				F22F91B313F33BAD006E4554 /* main.c */,
@@ -102,6 +107,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2C5A76713F3675A0082CEDD /* r0ketlcd.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +292,7 @@
 				F22F91BA13F33BAD006E4554 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
